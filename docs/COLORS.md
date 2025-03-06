@@ -3,11 +3,11 @@
 ## 🎨 Primary Color Palette
 
 ```css
---text: #F1F5F9;      /* Slate white - Clean, crisp text */
---background: #020617; /* Deep slate - Professional dark background */
---primary: #4F46E5;    /* Electric indigo - Modern, tech-focused */
---secondary: #0EA5E9;  /* Sky blue - Trust, reliability */
---accent: #EC4899;     /* Pink - Distinctive CTAs */
+--text: #F1F5F9       /* Slate white - clean and crisp */
+--background: #020617 /* Deep slate - professional */
+--primary: #4F46E5    /* Electric indigo - modern */
+--secondary: #0EA5E9  /* Sky blue - trustworthy */
+--accent: #EC4899     /* Pink - distinctive */
 ```
 
 ## 🌓 Theme Variations
@@ -27,18 +27,18 @@ const darkTheme = {
       light: '#38BDF8',
       dark: '#0284C7'
     },
+    accent: {
+      main: '#EC4899',
+      light: '#F472B6',
+      dark: '#DB2777'
+    },
     background: {
       default: '#020617',
       paper: '#0F172A'
     },
     text: {
       primary: '#F1F5F9',
-      secondary: '#CBD5E1'
-    },
-    error: {
-      main: '#EC4899',
-      light: '#F472B6',
-      dark: '#DB2777'
+      secondary: '#E2E8F0'
     }
   }
 }
@@ -59,6 +59,11 @@ const lightTheme = {
       light: '#38BDF8',
       dark: '#0284C7'
     },
+    accent: {
+      main: '#EC4899',
+      light: '#F472B6',
+      dark: '#DB2777'
+    },
     background: {
       default: '#FFFFFF',
       paper: '#F8FAFC'
@@ -66,11 +71,6 @@ const lightTheme = {
     text: {
       primary: '#020617',
       secondary: '#1E293B'
-    },
-    error: {
-      main: '#EC4899',
-      light: '#F472B6',
-      dark: '#DB2777'
     }
   }
 }
@@ -79,104 +79,43 @@ const lightTheme = {
 ## 🎯 Color Usage Guidelines
 
 ### Navigation & Header
-- Background: Deep slate (#020617)
-- Text: Slate white (#F1F5F9)
-- Logo/Brand: Electric indigo (#4F46E5)
-- Active/Hover: Sky blue (#0EA5E9)
+- Background: Glass effect with deep slate base
+- Text: Slate white
+- Logo/Brand: Electric indigo
+- Active Links: Sky blue
+- CTA Button: Pink accent
 
 ### Hero Section
-- Background: Deep slate with gradient
-- Main Heading: Electric indigo (#4F46E5)
-- Subtext: Slate white (#F1F5F9)
-- CTA Buttons: Pink (#EC4899)
-- Secondary CTAs: Sky blue (#0EA5E9)
+- Background: Deep slate with subtle gradient
+- Main Heading: Slate white
+- Subheading: Sky blue
+- CTA Buttons: Pink accent
+- Decorative Elements: Electric indigo
 
 ### Services Section
-- Cards Background: Slightly lighter slate (#0F172A)
-- Card Borders: Electric indigo glow
-- Icons: Sky blue (#0EA5E9)
-- Headings: Electric indigo (#4F46E5)
-- Text: Slate white (#F1F5F9)
+- Cards Background: Glass effect on deep slate
+- Card Icons: Sky blue
+- Card Titles: Electric indigo
+- Card Text: Slate white
+- Hover States: Pink accent
 
 ### Portfolio Projects
-- Cards: Paper background (#0F172A)
-- Project Titles: Electric indigo (#4F46E5)
-- Technologies: Sky blue (#0EA5E9)
-- View Project Button: Pink (#EC4899)
-- Hover States: Mix of primary and secondary colors
+- Cards: Glass effect background
+- Project Titles: Electric indigo
+- Technologies: Sky blue
+- View Button: Pink accent
+- Hover: Gradient mix of primary and secondary
 
 ### Contact Section
-- Form Background: Slightly lighter slate (#0F172A)
-- Input Fields: Borders in Sky blue (#0EA5E9)
-- Labels: Slate white (#F1F5F9)
-- Submit Button: Pink (#EC4899)
-- Social Icons: Electric indigo (#4F46E5)
+- Form Background: Glass effect
+- Input Fields: Slate white text
+- Input Borders: Electric indigo
+- Submit Button: Pink accent
+- Social Icons: Sky blue
 
-## 💡 Usage Examples
-
-### Buttons
-```css
-/* Primary Button */
-.button-primary {
-  background: #4F46E5;
-  color: #F1F5F9;
-  &:hover {
-    background: #6366F1;
-  }
-}
-
-/* Secondary Button */
-.button-secondary {
-  background: #0EA5E9;
-  color: #F1F5F9;
-  &:hover {
-    background: #38BDF8;
-  }
-}
-
-/* CTA Button */
-.button-cta {
-  background: #EC4899;
-  color: #F1F5F9;
-  &:hover {
-    background: #F472B6;
-  }
-}
-```
-
-### Cards
-```css
-.card {
-  background: #0F172A;
-  color: #F1F5F9;
-  border: 1px solid rgba(79, 70, 229, 0.1);
-  box-shadow: 0 0 20px rgba(79, 70, 229, 0.05);
-}
-
-.card-hover {
-  &:hover {
-    border-color: #4F46E5;
-    box-shadow: 0 0 30px rgba(79, 70, 229, 0.1);
-  }
-}
-```
-
-### Text Styles
-```css
-.heading-primary {
-  color: #4F46E5;
-  font-weight: bold;
-}
-
-.heading-secondary {
-  color: #0EA5E9;
-}
-
-.text-body {
-  color: #F1F5F9;
-}
-
-.text-muted {
-  color: #CBD5E1;
-}
-```
+## 💫 Special Effects
+- Glass Morphism: rgba(255, 255, 255, 0.1)
+- Shadows: rgba(2, 6, 23, 0.1)
+- Gradients: Linear mix of primary and secondary
+- Hover Effects: Subtle scale and color transitions
+- Focus States: Electric indigo glow
